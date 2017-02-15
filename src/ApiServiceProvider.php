@@ -15,10 +15,10 @@ class ApiServiceProvider extends ServiceProvider {
 		$this->loadViewsFrom(__DIR__ . '/views', 'cowaboo_api');
 		$this->publishes([
 			__DIR__ . '/views' => resource_path('views/vendor/cowaboo_api'),
-		], 'cowaboo_api-views');
+		], 'views');
 		$this->publishes([
 			__DIR__ . '/assets' => public_path('vendor/cowaboo_api'),
-		], 'cowaboo_api-assets');
+		], 'assets');
 	}
 
 	/**
