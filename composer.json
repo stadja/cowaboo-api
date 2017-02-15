@@ -8,11 +8,5 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
-    "post-package-install": [
-	"php artisan vendor:publish --tag=cowaboo_api-assets --force"
-    ],
-    "post-package-update": [
-	"php artisan vendor:publish --tag=cowaboo_api-assets --force"
-    ]
+    "require": {}
 }
