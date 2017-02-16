@@ -19,6 +19,9 @@ class ApiServiceProvider extends ServiceProvider {
 		$this->publishes([
 			__DIR__ . '/assets' => public_path('vendor/cowaboo_api'),
 		], 'assets');
+		$this->app->register(
+			\Cowaboo\Models\ModelsServiceProvider::class
+		);
 	}
 
 	/**

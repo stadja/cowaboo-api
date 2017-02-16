@@ -1,11 +1,10 @@
 <?php
 
 namespace Cowaboo\Api;
-use App\Dictionary;
-use App\Entry;
 use App\Http\Controllers\Controller;
 use Auth;
-use CowabooProject;
+use Cowaboo\Models\Dictionary;
+use Cowaboo\Models\Entry;
 use Exception;
 use Illuminate\Http\Request;
 use IPFS;
@@ -198,7 +197,7 @@ class ApiController extends Controller {
 		$mail = str_replace(
 			array('%PUBLICADDRESS%', '%SECRETKEY%'),
 			array($keyPair->public_address, $keyPair->secret_key),
-			CowabooProject::findEntry('CoWaBoo,Welcome,email')->value_html
+			"email à créer, '%PUBLICADDRESS%', '%SECRETKEY%', '%PUBLICADDRESS%', '%SECRETKEY%'"
 		);
 
 		$to = $email;

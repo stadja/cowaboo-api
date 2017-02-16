@@ -8,7 +8,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "cowaboo/models": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "Cowaboo\\Api\\": "src/"
